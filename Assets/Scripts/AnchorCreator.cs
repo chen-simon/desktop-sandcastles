@@ -7,8 +7,8 @@ using UnityEngine.XR.ARFoundation;
 [RequireComponent(typeof(ARAnchorManager))]
 [RequireComponent(typeof(ARRaycastManager))]
 public class AnchorCreator : MonoBehaviour {
-    GameObject wall;
-    GameObject tower;
+    public GameObject wall;
+    public GameObject tower;
 
     bool isTowerNext = false;
 
@@ -41,10 +41,8 @@ public class AnchorCreator : MonoBehaviour {
         if (hit.trackable is ARPlane plane) {
             var planeManager = GetComponent<ARPlaneManager>();
             if (planeManager) {
-                var oldPrefab = m_AnchorManager.anchorPrefab;
                 m_AnchorManager.anchorPrefab = prefab;
                 anchor = m_AnchorManager.AttachAnchor(plane, hit.pose);
-                m_AnchorManager.anchorPrefab = oldPrefab;
                 return anchor;
             }
         }
