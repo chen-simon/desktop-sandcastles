@@ -76,7 +76,7 @@ public class AnchorCreator : MonoBehaviour {
         Ray ray = arCamera.ScreenPointToRay(touch.position);
 
         // Perform the raycast
-        if (Physics.Raycast(ray, out physicsHit)) {
+        if (Physics.Raycast(ray, out physicsHit) && !physicsHit.transform.GetComponent<ARPlane>()) {
             Transform transformHit = physicsHit.transform;
             transformHit.localScale = new Vector3(transformHit.localScale.x, transformHit.localScale.y, transformHit.localScale.z * 2);
         } else if (m_RaycastManager.Raycast(touch.position, s_Hits, TrackableType.All)) {

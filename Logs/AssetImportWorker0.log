@@ -155,3 +155,136 @@ Total: 2.566300 ms (FindLiveObjects: 0.217500 ms CreateObjectMapping: 0.058200 m
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 547.685653 seconds.
+  path: Assets/Prefabs/Kingdom.prefab
+  artifactKey: Guid(dafa1196fbd8729478c986b73f1ad1cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Kingdom.prefab using Guid(dafa1196fbd8729478c986b73f1ad1cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c80a28b39650184ba009fe87b423c57') in 0.360649 seconds
+  Import took 0.364718 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Prefabs/Tower 2.prefab
+  artifactKey: Guid(eeaf8c2f0437dc84cb4e65b7ec36d440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower 2.prefab using Guid(eeaf8c2f0437dc84cb4e65b7ec36d440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0091e3674cc165dfd56f2edfa1155c90') in 0.118147 seconds
+  Import took 0.121295 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000398 seconds.
+  path: Assets/Prefabs/Wall 2.prefab
+  artifactKey: Guid(e3197cc88da347e40a6147e2ec4520eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Wall 2.prefab using Guid(e3197cc88da347e40a6147e2ec4520eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4c546ae144cb023332de0e25fa5f825') in 0.085769 seconds
+  Import took 0.088871 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.24 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 45.9 MB.
+System memory in use after: 46.0 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2269.
+Total: 3.331100 ms (FindLiveObjects: 0.207600 ms CreateObjectMapping: 0.048100 ms MarkObjects: 3.012800 ms  DeleteObjects: 0.061700 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.44 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 45.9 MB.
+System memory in use after: 46.0 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2269.
+Total: 3.014800 ms (FindLiveObjects: 0.214700 ms CreateObjectMapping: 0.048300 ms MarkObjects: 2.688700 ms  DeleteObjects: 0.062100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 510.048835 seconds.
+  path: Assets/Scripts/AnchorCreator.cs
+  artifactKey: Guid(729141a9fb079ba4fbb0c23a1b2f6093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/AnchorCreator.cs using Guid(729141a9fb079ba4fbb0c23a1b2f6093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '865f7bfe27b29bef1186a10bc70d6fce') in 0.025819 seconds
+  Import took 0.029725 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.034377 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.246 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 81.5 MB.
+System memory in use after: 81.6 MB.
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 2273.
+Total: 2.587000 ms (FindLiveObjects: 0.218700 ms CreateObjectMapping: 0.058800 ms MarkObjects: 2.240900 ms  DeleteObjects: 0.067200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 163.951621 seconds.
+  path: Assets/Scripts/AnchorCreator.cs
+  artifactKey: Guid(729141a9fb079ba4fbb0c23a1b2f6093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/AnchorCreator.cs using Guid(729141a9fb079ba4fbb0c23a1b2f6093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a1ab7e1328b385795c426be5c521355') in 0.006346 seconds
+  Import took 0.009469 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.46 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 45.9 MB.
+System memory in use after: 46.0 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2273.
+Total: 2.651200 ms (FindLiveObjects: 0.246400 ms CreateObjectMapping: 0.049900 ms MarkObjects: 2.292000 ms  DeleteObjects: 0.062100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012324 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.323 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 81.5 MB.
+System memory in use after: 81.6 MB.
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 2277.
+Total: 2.577800 ms (FindLiveObjects: 0.250200 ms CreateObjectMapping: 0.049700 ms MarkObjects: 2.208700 ms  DeleteObjects: 0.068000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 45.9 MB.
+System memory in use after: 46.0 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2277.
+Total: 2.784800 ms (FindLiveObjects: 0.212100 ms CreateObjectMapping: 0.048900 ms MarkObjects: 2.449700 ms  DeleteObjects: 0.072800 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
