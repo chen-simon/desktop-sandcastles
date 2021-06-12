@@ -78,6 +78,7 @@ public class AnchorCreator : MonoBehaviour {
         // Perform the raycast
         if (Physics.Raycast(ray, out physicsHit)) {
             Transform transformHit = physicsHit.transform;
+            transformHit.localScale = new Vector3(transformHit.localScale.x, transformHit.localScale.y, transformHit.localScale.z * 2);
         } else if (m_RaycastManager.Raycast(touch.position, s_Hits, TrackableType.All)) {
             // Raycast hits are sorted by distance, so the first one will be the closest hit.
             var hit = s_Hits[0];
