@@ -7,18 +7,16 @@ using UnityEngine.XR.ARFoundation;
 [RequireComponent(typeof(ARAnchorManager))]
 [RequireComponent(typeof(ARRaycastManager))]
 public class AnchorCreator : MonoBehaviour {
-    [SerializeField]
-    GameObject m_Prefab;
+    GameObject wall;
+    GameObject tower;
 
-    public GameObject prefab {
-        get => m_Prefab;
-        set => m_Prefab = value;
-    }
+    bool isTowerNext = false;
 
     static List<ARRaycastHit> s_Hits = new List<ARRaycastHit>();
     List<ARAnchor> m_Anchors = new List<ARAnchor>();
     ARRaycastManager m_RaycastManager;
     ARAnchorManager m_AnchorManager;
+    Camera arCamera;
 
     public void RemoveAllAnchors() {
         foreach (var anchor in m_Anchors) {
@@ -30,10 +28,14 @@ public class AnchorCreator : MonoBehaviour {
     void Awake() {
         m_RaycastManager = GetComponent<ARRaycastManager>();
         m_AnchorManager = GetComponent<ARAnchorManager>();
+        arCamera = GetComponentInChildren<Camera>(); // Gets the attached AR Camera from the AR Session Origin
     }
 
     ARAnchor CreateAnchor(in ARRaycastHit hit) {
         ARAnchor anchor = null;
+
+        GameObject prefab = isTowerNext ? tower : wall;
+        isTowerNext = !isTowerNext;
 
         // If we hit a plane, try to "attach" the anchor to the plane
         if (hit.trackable is ARPlane plane) {
@@ -79,7 +81,6 @@ public class AnchorCreator : MonoBehaviour {
 
             // Create a new anchor
             var anchor = CreateAnchor(hit);
-            Debug.Log(anchor.transform.position); // EZ PZ
             if (anchor) {
                 // Remember the anchor so we can remove it later.
                 m_Anchors.Add(anchor);
