@@ -72,8 +72,13 @@ public class AnchorCreator : MonoBehaviour {
         ////TrackableType.FeaturePoint |
         ////TrackableType.PlaneWithinPolygon;
 
+        RaycastHit physicsHit;
+        Ray ray = arCamera.ScreenPointToRay(touch.position);
+
         // Perform the raycast
-        if (m_RaycastManager.Raycast(touch.position, s_Hits, TrackableType.All)) {
+        if (Physics.Raycast(ray, out physicsHit)) {
+            Transform transformHit = physicsHit.transform;
+        } else if (m_RaycastManager.Raycast(touch.position, s_Hits, TrackableType.All)) {
             // Raycast hits are sorted by distance, so the first one will be the closest hit.
             var hit = s_Hits[0];
 
